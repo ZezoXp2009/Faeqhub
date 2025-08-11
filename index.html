@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faeq Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="logo">
+            <h1>Faeq Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="connect.html"><i class="fas fa-users"></i> التواصل</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i> الألعاب</a></li>
+                <li><a href="store.html"><i class="fas fa-shopping-cart"></i> المتجر</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <button id="login-btn"><i class="fas fa-user"></i> تسجيل الدخول</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>مرحبًا بكم في Faeq Hub</h2>
+            <p>منصة الألعاب الرائدة لتحميل وتشغيل أفضل الألعاب الإلكترونية</p>
+            <button class="cta-button">استكشف الألعاب</button>
+        </section>
+
+        <section class="featured-games">
+            <h3>الألعاب المميزة</h3>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="Photos/Hell mode.jpg" alt="Hell Mode">
+                    <h4>Hell Mode v1.5.7</h4>
+                    <p>هذه اللعبة تعمد علي صبر اللعب الطويل ولها طابعها الخاص</p>
+                    <button class="download-btn">تحميل</button>
+                </div>
+                <div class="game-card">
+                    <img src="Photos/Cooming Soon.jpg" alt="لعبة 2">
+                    <h4>Cooming Soon</h4>
+                    <p>وصف قصير للعبة المميزة.</p>
+                    <button class="download-btn">تحميل</button>
+                </div>
+                <div class="game-card">
+                    <img src="Photos/Cooming Soon.jpg" alt="لعبة 3">
+                    <h4>Cooming Soon</h4>
+                    <p>وصف قصير للعبة المميزة.</p>
+                    <button class="download-btn">تحميل</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments-section">
+            <h3>تعليقات اللاعبين</h3>
+            <div class="comments-container" id="comments-container">
+                <!-- التعليقات ستضاف هنا عبر JavaScript -->
+            </div>
+            <form id="comment-form">
+                <textarea id="comment-text" placeholder="أضف تعليقك هنا..." required></textarea>
+                <button type="submit">نشر التعليق</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025-2026 Faeq Hub. جميع الحقوق محفوظة.</p>
+        <div class="social-links">
+            <a href="https://web.facebook.com/ZezoXAbdalazez"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/bdalzyzshryf1"><i class="fab fa-twitter"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>تسجيل الدخول</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+            <p class="register-link">ليس لديك حساب؟ <a href="#" id="register-link">سجل الآن</a></p>
+        </div>
+    </div>
+
+    <!-- نافذة التسجيل -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>إنشاء حساب جديد</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="new-username">اسم المستخدم:</label>
+                    <input type="text" id="new-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-email">البريد الإلكتروني:</label>
+                    <input type="email" id="new-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">كلمة المرور:</label>
+                    <input type="password" id="new-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">تأكيد كلمة المرور:</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <button type="submit">إنشاء حساب</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
